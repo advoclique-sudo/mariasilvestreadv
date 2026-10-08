@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ação de Despejo e Aluguel Atrasado | Maria Silvestre Advocacia</title>
+<meta name="description" content="Seu inquilino não paga aluguel ou não desocupa o imóvel? Conheça as medidas jurídicas cabíveis para conflitos locatícios.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Ação de Despejo e Aluguel Atrasado | Maria Silvestre Advocacia">
+<meta property="og:description" content="Seu inquilino não paga aluguel ou não desocupa o imóvel? Conheça as medidas jurídicas cabíveis para conflitos locatícios.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#302016">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- =====================================================================
+     CONFIGURAÇÃO — edite apenas este bloco
+     ===================================================================== -->
+<script>
+  window.LP_CONFIG = {
+    // Número do WhatsApp com DDI + DDD, apenas dígitos. Ex.: "5553999999999"
+    WHATSAPP_NUMBER: "5511994404242",
+    WHATSAPP_MESSAGE: "Olá! Tenho um imóvel com aluguel atrasado e gostaria de orientação jurídica.",
+
+    // IDs de mensuração — deixe em branco até receber os identificadores reais
+    GTM_ID: "",                    // Ex.: "GTM-XXXXXXX"
+    GOOGLE_ADS_ID: "",             // Ex.: "AW-000000000"
+    GOOGLE_ADS_CONVERSION_LABEL: "", // Ex.: "AbCdEfGhIj"
+    META_PIXEL_ID: ""              // Ex.: "000000000000000"
+  };
+</script>
+
+<!-- Google Tag Manager (carrega somente se GTM_ID estiver preenchido) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  (function(){
+    var id = window.LP_CONFIG.GTM_ID;
+    if(!id) return;
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer',id);
+  })();
+</script>
+
+<!-- Google Ads (gtag) — carrega somente se GOOGLE_ADS_ID estiver preenchido -->
+<script>
+  (function(){
+    var id = window.LP_CONFIG.GOOGLE_ADS_ID;
+    if(!id) return;
+    var s=document.createElement('script');s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id='+id;document.head.appendChild(s);
+    window.gtag=function(){dataLayer.push(arguments);};
+    gtag('js',new Date());gtag('config',id);
+  })();
+</script>
+
+<!-- Meta Pixel — carrega somente se META_PIXEL_ID estiver preenchido -->
+<script>
+  (function(){
+    var id = window.LP_CONFIG.META_PIXEL_ID;
+    if(!id) return;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init',id);fbq('track','PageView');
+  })();
+</script>
+
+<style>
+  :root{
+    --espresso:#302016;
+    --gold:#C99C52;
+    --gold-dark:#B48A43;
+    --champagne:#EBD2A8;
+    --beige:#F6F0E7;
+    --warm-white:#FFFCF7;
+    --brown:#675244;
+    --line:rgba(201,156,82,.35);
+    --shadow:0 18px 50px -24px rgba(48,32,22,.35);
+    --radius:14px;
+    --font-serif:'Playfair Display',Georgia,serif;
+    --font-sans:'Inter',system-ui,-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:var(--font-sans);
+    color:var(--brown);
+    background:var(--beige);
+    line-height:1.65;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:var(--font-serif);color:var(--espresso);font-weight:500;line-height:1.18;letter-spacing:-.01em}
+  .container{width:min(1160px,100% - 48px);margin-inline:auto}
+  @media(max-width:640px){.container{width:min(1160px,100% - 40px)}}
+  section{padding:88px 0}
+  @media(max-width:900px){section{padding:68px 0}}
+  @media(max-width:640px){section{padding:56px 0}}
+
+  /* ---------- Tipografia de apoio ---------- */
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:12px;
+    font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--gold-dark);
+  }
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+  .section-head{max-width:720px;margin-bottom:44px}
+  .section-head h2{font-size:clamp(1.85rem,3.4vw,2.6rem);margin:16px 0 18px}
+  .section-head p{font-size:1.08rem;color:var(--brown)}
+  .center{text-align:center;margin-inline:auto}
+  .center .eyebrow{justify-content:center}
+  .center .eyebrow::after{content:"";width:28px;height:1px;background:var(--gold)}
+  .note{font-size:.86rem;color:var(--brown);opacity:.85;line-height:1.6}
+
+  /* ---------- Botões ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:17px 30px;border-radius:8px;
+    font-family:var(--font-sans);font-weight:600;font-size:.84rem;letter-spacing:.1em;text-transform:uppercase;
+    background:var(--gold);color:var(--espresso);
+    border:1px solid var(--gold);
+    transition:transform .25s ease,box-shadow .25s ease,background .25s ease;
+    box-shadow:0 10px 28px -14px rgba(201,156,82,.9);
+    cursor:pointer;white-space:nowrap;
+  }
+  .btn:hover{background:var(--gold-dark);border-color:var(--gold-dark);transform:translateY(-2px);box-shadow:0 16px 32px -14px rgba(201,156,82,1)}
+  .btn:active{transform:translateY(0)}
+  .btn .arrow{transition:transform .25s ease}
+  .btn:hover .arrow{transform:translateX(4px)}
+  .btn-outline{background:transparent;color:var(--espresso);box-shadow:none}
+  .btn-outline:hover{background:var(--gold);color:var(--espresso)}
+  @media(max-width:640px){.btn{width:100%;padding:16px 22px;font-size:.8rem;white-space:normal;text-align:center}}
+
+  /* ---------- Header ---------- */
+  .header{
+    position:absolute;top:0;left:0;right:0;z-index:20;
+    padding:26px 0;
+  }
+  .header .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .brand{display:flex;flex-direction:column;line-height:1.1}
+  .brand strong{font-family:var(--font-serif);font-weight:500;font-size:1.05rem;letter-spacing:.12em;color:var(--espresso)}
+  .brand span{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dark);margin-top:5px;font-weight:500}
+  .header .btn{padding:13px 22px;font-size:.76rem}
+  @media(max-width:640px){.header .btn{display:none}.header{padding:22px 0}}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;min-height:100vh;display:flex;align-items:center;
+    padding:140px 0 90px;overflow:hidden;
+    background:linear-gradient(180deg,#F8F3EA 0%,var(--beige) 100%);
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(60% 70% at 85% 50%,rgba(201,156,82,.18),transparent 70%);
+    pointer-events:none;
+  }
+  .hero .container{
+    display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;position:relative;
+  }
+  .hero-copy .eyebrow{margin-bottom:28px}
+  .hero h1{font-size:clamp(2.1rem,4.4vw,3.6rem);margin-bottom:24px}
+  .hero h1 em{font-style:italic;color:var(--gold-dark)}
+  .hero p.lead{font-size:1.12rem;max-width:560px;margin-bottom:36px;color:var(--brown)}
+  .hero .note{margin-top:16px;display:flex;align-items:center;gap:10px}
+  .hero .note::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+  .hero-visual{position:relative}
+  .hero-frame{
+    position:relative;aspect-ratio:4/5;border-radius:18px;overflow:hidden;
+    box-shadow:var(--shadow);
+    background:linear-gradient(135deg,#D9C09A,#8C6B4A);
+  }
+  .hero-frame img{width:100%;height:100%;object-fit:cover;object-position:center}
+  .hero-frame::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(90deg,rgba(246,240,231,.55) 0%,rgba(246,240,231,0) 32%),
+               linear-gradient(0deg,rgba(246,240,231,.5) 0%,rgba(246,240,231,0) 30%);
+  }
+  .hero-frame-line{
+    position:absolute;inset:18px;border:1px solid rgba(201,156,82,.55);border-radius:12px;pointer-events:none;z-index:2;
+  }
+  .hero-badge{
+    position:absolute;left:-22px;bottom:40px;z-index:3;
+    background:var(--warm-white);border:1px solid var(--line);border-radius:12px;
+    padding:18px 22px;box-shadow:var(--shadow);max-width:260px;
+  }
+  .hero-badge strong{display:block;font-family:var(--font-serif);font-size:1.05rem;color:var(--espresso);margin-bottom:4px;font-weight:500}
+  .hero-badge span{font-size:.8rem;color:var(--brown);line-height:1.5;display:block}
+  @media(max-width:980px){
+    .hero{min-height:auto;padding:120px 0 72px}
+    .hero .container{grid-template-columns:1fr;gap:44px}
+    .hero-visual{order:2}
+    .hero-frame{aspect-ratio:16/10;max-height:380px}
+    .hero-badge{left:16px;bottom:16px;padding:14px 18px}
+  }
+  @media(max-width:640px){
+    .hero{padding:104px 0 56px}
+    .hero h1{font-size:2rem}
+    .hero p.lead{font-size:1rem}
+    .hero-frame{aspect-ratio:4/3;max-height:300px}
+    .hero-badge{display:none}
+    .hero-copy .eyebrow{display:none}
+  }
+
+  /* ---------- Problemas ---------- */
+  .problems{background:var(--warm-white)}
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .card{
+    background:var(--beige);border:1px solid rgba(201,156,82,.25);border-radius:var(--radius);
+    padding:34px 28px;position:relative;
+    transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+  }
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--gold)}
+  .card .icon{
+    width:52px;height:52px;border-radius:12px;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;margin-bottom:24px;
+    color:var(--gold-dark);background:var(--warm-white);
+  }
+  .card .icon svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+  .card h3{font-size:1.2rem;margin-bottom:10px}
+  .card p{font-size:.95rem;color:var(--brown)}
+  .cards-foot{text-align:center;margin-top:56px;max-width:640px;margin-inline:auto}
+  .cards-foot p{margin-bottom:28px;font-size:1.02rem}
+  @media(max-width:1000px){.cards{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.cards{grid-template-columns:1fr}.card{padding:28px 24px}}
+
+  /* ---------- Ação de despejo ---------- */
+  .despejo{background:var(--champagne);position:relative;overflow:hidden}
+  .despejo::before{
+    content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;
+    border:1px solid rgba(201,156,82,.45);pointer-events:none;
+  }
+  .despejo::after{
+    content:"";position:absolute;right:-60px;top:-60px;width:300px;height:300px;border-radius:50%;
+    border:1px solid rgba(201,156,82,.35);pointer-events:none;
+  }
+  .despejo .container{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:start;position:relative}
+  .despejo h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin:16px 0 26px}
+  .despejo .text p{font-size:1.05rem;margin-bottom:18px;color:var(--espresso);opacity:.85}
+  .despejo .text .btn{margin-top:14px}
+  .despejo .text .note{margin-top:22px;max-width:520px}
+  .points{display:flex;flex-direction:column;gap:18px}
+  .point{
+    background:rgba(255,252,247,.75);backdrop-filter:blur(6px);
+    border:1px solid rgba(201,156,82,.4);border-radius:var(--radius);padding:26px 28px;
+    display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;
+  }
+  .point .num{font-family:var(--font-serif);font-size:1.4rem;color:var(--gold-dark);line-height:1;padding-top:4px}
+  .point h3{font-size:1.15rem;margin-bottom:6px}
+  .point p{font-size:.95rem}
+  @media(max-width:900px){.despejo .container{grid-template-columns:1fr;gap:44px}}
+
+  /* ---------- Etapas ---------- */
+  .steps{background:var(--beige)}
+  .timeline{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-top:16px;
+  }
+  .timeline::before{
+    content:"";position:absolute;top:26px;left:calc(12.5% + 26px);right:calc(12.5% + 26px);height:1px;
+    background:linear-gradient(90deg,transparent,var(--gold) 15%,var(--gold) 85%,transparent);
+  }
+  .step{padding:0 22px;position:relative}
+  .step .dot{
+    width:52px;height:52px;border-radius:50%;background:var(--warm-white);border:1px solid var(--gold);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-serif);color:var(--espresso);font-size:1rem;margin:0 auto 26px;
+    position:relative;z-index:1;box-shadow:0 0 0 8px var(--beige);
+  }
+  .step h3{font-size:1.15rem;text-align:center;margin-bottom:10px}
+  .step p{font-size:.94rem;text-align:center}
+  .steps-foot{text-align:center;margin-top:56px;max-width:600px;margin-inline:auto}
+  .steps-foot p{margin-bottom:28px;font-size:1.02rem}
+  @media(max-width:900px){
+    .timeline{grid-template-columns:1fr;gap:34px;padding-left:12px}
+    .timeline::before{top:0;bottom:0;left:38px;right:auto;width:1px;height:auto;
+      background:linear-gradient(180deg,transparent,var(--gold) 8%,var(--gold) 92%,transparent)}
+    .step{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:0;align-items:start}
+    .step .dot{margin:0}
+    .step h3,.step p{text-align:left}
+    .step h3{margin-top:12px}
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--warm-white)}
+  .faq-list{max-width:820px;margin-inline:auto;border-top:1px solid var(--line)}
+  .faq-item{border-bottom:1px solid var(--line)}
+  .faq-q{
+    width:100%;background:none;border:0;text-align:left;cursor:pointer;
+    display:flex;justify-content:space-between;align-items:center;gap:24px;
+    padding:26px 4px;font-family:var(--font-serif);font-size:1.15rem;color:var(--espresso);
+    transition:color .2s ease;
+  }
+  .faq-q:hover{color:var(--gold-dark)}
+  .faq-q .plus{
+    flex:none;width:30px;height:30px;border-radius:50%;border:1px solid var(--gold);
+    display:flex;align-items:center;justify-content:center;position:relative;transition:transform .3s ease,background .3s ease;
+  }
+  .faq-q .plus::before,.faq-q .plus::after{content:"";position:absolute;background:var(--gold-dark);transition:transform .3s ease}
+  .faq-q .plus::before{width:12px;height:1px}
+  .faq-q .plus::after{width:1px;height:12px}
+  .faq-item.open .faq-q .plus{background:var(--gold)}
+  .faq-item.open .faq-q .plus::before,.faq-item.open .faq-q .plus::after{background:var(--espresso)}
+  .faq-item.open .faq-q .plus::after{transform:rotate(90deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease;padding:0 4px}
+  .faq-a p{padding-bottom:26px;font-size:1rem;max-width:720px}
+  .faq-item.open .faq-a{max-height:400px}
+  .faq-foot{text-align:center;margin-top:56px}
+  .faq-foot p{margin-bottom:26px;font-size:1.02rem}
+  @media(max-width:640px){.faq-q{font-size:1.02rem;padding:22px 2px}}
+
+  /* ---------- Sobre ---------- */
+  .about{background:var(--beige)}
+  .about .container{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+  .logo-box{
+    aspect-ratio:1;border:1px solid var(--line);border-radius:var(--radius);
+    display:flex;align-items:center;justify-content:center;background:var(--warm-white);
+    padding:40px;position:relative;
+  }
+  .logo-box::before{content:"";position:absolute;inset:12px;border:1px solid rgba(201,156,82,.25);border-radius:10px}
+  .logo-box img{max-width:70%;max-height:70%;object-fit:contain}
+  .logo-mark{text-align:center;font-family:var(--font-serif);color:var(--espresso)}
+  .logo-mark .ms{font-size:4.4rem;line-height:1;letter-spacing:.04em;color:var(--gold-dark);font-weight:400}
+  .logo-mark .name{display:block;font-size:1.05rem;letter-spacing:.2em;text-transform:uppercase;margin-top:18px;font-weight:500}
+  .logo-mark .sub{display:block;font-family:var(--font-sans);font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--brown);margin-top:8px}
+  .about h2{font-size:clamp(1.9rem,3.2vw,2.5rem);margin:16px 0 10px}
+  .about .sub-h{font-family:var(--font-serif);font-style:italic;font-size:1.2rem;color:var(--gold-dark);margin-bottom:24px}
+  .about p{font-size:1.02rem;margin-bottom:16px}
+  @media(max-width:900px){.about .container{grid-template-columns:1fr;gap:40px}.logo-box{max-width:320px;margin-inline:auto}}
+
+  /* ---------- CTA Final ---------- */
+  .final{background:var(--espresso);color:var(--beige);position:relative;overflow:hidden;text-align:center}
+  .final::before{
+    content:"";position:absolute;inset:24px;border:1px solid rgba(201,156,82,.3);border-radius:18px;pointer-events:none;
+  }
+  .final::after{
+    content:"";position:absolute;left:50%;top:-200px;width:700px;height:700px;transform:translateX(-50%);
+    background:radial-gradient(circle,rgba(201,156,82,.18),transparent 60%);pointer-events:none;
+  }
+  .final .container{position:relative;max-width:820px}
+  .final .eyebrow{color:var(--gold);justify-content:center}
+  .final .eyebrow::after{content:"";width:28px;height:1px;background:var(--gold)}
+  .final h2{color:var(--warm-white);font-size:clamp(2rem,3.8vw,3rem);margin:20px 0 22px}
+  .final h2 em{font-style:italic;color:var(--gold)}
+  .final p{font-size:1.1rem;color:var(--champagne);max-width:620px;margin:0 auto 38px;opacity:.9}
+  .final .btn{box-shadow:0 18px 40px -16px rgba(201,156,82,.7)}
+  .final .btn svg{width:20px;height:20px}
+  .final .note{margin-top:20px;color:var(--champagne);opacity:.7}
+
+  /* ---------- Rodapé ---------- */
+  .footer{background:#211610;color:var(--beige);padding:56px 0 110px;font-size:.88rem}
+  .footer .container{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+  .footer .brand strong{color:var(--beige)}
+  .footer .brand span{color:var(--gold)}
+  .footer h4{font-family:var(--font-sans);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:500}
+  .footer ul{list-style:none}
+  .footer li{margin-bottom:10px;color:rgba(246,240,231,.8)}
+  .footer a:hover{color:var(--gold)}
+  .footer .placeholder{color:rgba(246,240,231,.45);font-style:italic}
+  .footer-bottom{
+    margin-top:44px;padding-top:24px;border-top:1px solid rgba(201,156,82,.25);
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.78rem;color:rgba(246,240,231,.55);
+  }
+  @media(max-width:900px){.footer .container{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.footer .container{grid-template-columns:1fr}.footer{padding-bottom:120px}}
+  @media(min-width:641px){.footer{padding-bottom:56px}}
+
+  /* ---------- WhatsApp flutuante / barra mobile ---------- */
+  .wa-float{
+    position:fixed;right:22px;bottom:22px;z-index:50;
+    width:58px;height:58px;border-radius:50%;background:#25D366;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 12px 28px -8px rgba(37,211,102,.6);
+    transition:transform .25s ease;
+  }
+  .wa-float:hover{transform:scale(1.06)}
+  .wa-float svg{width:30px;height:30px;fill:#fff}
+  .wa-bar{
+    display:none;position:fixed;left:0;right:0;bottom:0;z-index:49;
+    background:rgba(255,252,247,.96);backdrop-filter:blur(10px);
+    border-top:1px solid var(--line);padding:12px 20px 14px;
+    padding-bottom:calc(14px + env(safe-area-inset-bottom));
+  }
+  .wa-bar .btn{width:100%;padding:15px 18px}
+  @media(max-width:640px){
+    .wa-bar{display:block}
+    .wa-float{display:none}
+  }
+
+  /* ---------- Animações ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.65,.2,1),transform .8s cubic-bezier(.2,.65,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}.reveal.d4{transition-delay:.4s}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<!-- GTM noscript -->
+<noscript id="gtm-noscript"></noscript>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container">
+    <a href="#inicio" class="brand" aria-label="Maria Silvestre Advocacia">
+      <strong>MARIA SILVESTRE ADVOCACIA</strong>
+      <span>Direito Imobiliário | Ações de Despejo</span>
+    </a>
+    <a class="btn btn-outline wa-link" data-cta="header" href="#">Falar no WhatsApp</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="eyebrow reveal">Direito Imobiliário | Ações de Despejo</span>
+      <h1 class="reveal d1">Seu inquilino parou de pagar o aluguel e <em>não desocupa o imóvel?</em></h1>
+      <p class="lead reveal d2">A inadimplência do inquilino pode comprometer sua renda e impedir o uso do seu patrimônio. Entenda quais medidas jurídicas podem ser adotadas para buscar a desocupação do imóvel e a cobrança dos valores atrasados.</p>
+      <div class="reveal d3">
+        <a class="btn wa-link" data-cta="hero" href="#">Entenda seus direitos <span class="arrow">→</span></a>
+        <p class="note">Atendimento jurídico individualizado para proprietários de imóveis.</p>
+      </div>
+    </div>
+    <div class="hero-visual reveal d2">
+      <div class="hero-frame">
+        <!-- Substitua pela fotografia licenciada: chave dourada na fechadura de uma porta de madeira, interior residencial desfocado ao fundo -->
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80" alt="Chave na fechadura de uma porta de madeira, com interior residencial ao fundo" loading="eager" fetchpriority="high" width="960" height="1200" onerror="this.style.visibility='hidden'">
+        <span class="hero-frame-line"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEMAS ================= -->
+<section class="problems" id="situacoes">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Identifique sua situação</span>
+      <h2>Você está passando por alguma dessas situações?</h2>
+      <p>Problemas com inquilinos podem gerar prejuízos financeiros e insegurança para o proprietário.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7"/><circle cx="18" cy="16" r="3"/><path d="M18 14.5v1.5l1 1"/></svg>
+        </div>
+        <h3>Aluguel em atraso</h3>
+        <p>Seu inquilino deixou de pagar há meses e a dívida continua aumentando?</p>
+      </article>
+      <article class="card reveal d1">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+        </div>
+        <h3>Imóvel não desocupado</h3>
+        <p>O contrato terminou, mas o inquilino permanece no imóvel e se recusa a sair?</p>
+      </article>
+      <article class="card reveal d2">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12.5h5"/></svg>
+        </div>
+        <h3>Promessas de pagamento</h3>
+        <p>Você já tentou negociar diversas vezes, mas os acordos nunca são cumpridos?</p>
+      </article>
+      <article class="card reveal d3">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>
+        </div>
+        <h3>Prejuízos com o imóvel</h3>
+        <p>Além da inadimplência, você enfrenta despesas, encargos ou possíveis danos ao patrimônio?</p>
+      </article>
+    </div>
+
+    <div class="cards-foot reveal">
+      <p>Cada situação exige uma análise jurídica específica. Conhecer as medidas cabíveis pode ajudar a evitar o agravamento do problema.</p>
+      <a class="btn wa-link" data-cta="situacoes" href="#">Conversar sobre meu caso</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AÇÃO DE DESPEJO ================= -->
+<section class="despejo" id="despejo">
+  <div class="container">
+    <div class="text reveal">
+      <span class="eyebrow">Ação de despejo</span>
+      <h2>Quando o inquilino não paga, o proprietário não precisa permanecer sem alternativas.</h2>
+      <p>A legislação prevê instrumentos para proteger o proprietário diante do descumprimento do contrato. A ação de despejo por falta de pagamento pode ser utilizada para buscar a retomada do imóvel e, conforme o caso, a cobrança dos aluguéis e encargos vencidos.</p>
+      <a class="btn wa-link" data-cta="despejo" href="#">Quero entender as medidas cabíveis</a>
+      <p class="note">A adoção de medidas judiciais depende da análise do contrato, dos documentos e das particularidades do caso.</p>
+    </div>
+
+    <div class="points">
+      <div class="point reveal d1">
+        <span class="num">I</span>
+        <div>
+          <h3>Análise do contrato de locação</h3>
+          <p>Avaliação das condições contratuais, garantias e obrigações descumpridas.</p>
+        </div>
+      </div>
+      <div class="point reveal d2">
+        <span class="num">II</span>
+        <div>
+          <h3>Medidas para retomada do imóvel</h3>
+          <p>Identificação dos requisitos para o ajuizamento da ação de despejo e das medidas eventualmente cabíveis.</p>
+        </div>
+      </div>
+      <div class="point reveal d3">
+        <span class="num">III</span>
+        <div>
+          <h3>Cobrança dos valores em atraso</h3>
+          <p>Avaliação das possibilidades de cobrança dos aluguéis e encargos devidos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ETAPAS ================= -->
+<section class="steps" id="etapas">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Próximos passos</span>
+      <h2>Seu inquilino não paga o aluguel. Qual é o próximo passo?</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="step reveal">
+        <div class="dot">01</div>
+        <div>
+          <h3>Avaliação da situação</h3>
+          <p>Análise dos atrasos, do contrato, das garantias existentes e das tentativas anteriores de negociação.</p>
+        </div>
+      </div>
+      <div class="step reveal d1">
+        <div class="dot">02</div>
+        <div>
+          <h3>Definição da medida jurídica</h3>
+          <p>Identificação das possibilidades legais aplicáveis, incluindo eventual negociação, cobrança ou ação de despejo.</p>
+        </div>
+      </div>
+      <div class="step reveal d2">
+        <div class="dot">03</div>
+        <div>
+          <h3>Adoção das providências cabíveis</h3>
+          <p>Preparação dos documentos e encaminhamento das medidas juridicamente adequadas ao caso.</p>
+        </div>
+      </div>
+      <div class="step reveal d3">
+        <div class="dot">04</div>
+        <div>
+          <h3>Acompanhamento jurídico</h3>
+          <p>Orientação sobre os procedimentos, prazos e desdobramentos da demanda.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="steps-foot reveal">
+      <p>Quanto mais informações sobre a locação estiverem disponíveis, mais precisa poderá ser a avaliação jurídica.</p>
+      <a class="btn wa-link" data-cta="etapas" href="#">Iniciar atendimento</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="duvidas">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Perguntas frequentes</span>
+      <h2>Dúvidas comuns de proprietários</h2>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quantos meses de aluguel atrasado são necessários para entrar com ação de despejo?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><p>A falta de pagamento pode fundamentar a ação de despejo, sem que a lei estabeleça uma quantidade mínima geral de meses de atraso. É importante analisar o contrato e as circunstâncias do caso.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Posso retirar o inquilino do imóvel por conta própria?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><p>A retomada deve respeitar os procedimentos legais. Trocar fechaduras, retirar pertences ou impedir o acesso do inquilino sem respaldo jurídico pode gerar consequências para o proprietário.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">É possível cobrar os aluguéis atrasados junto com a ação de despejo?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><p>Em determinadas situações, a legislação permite cumular o pedido de despejo com a cobrança dos aluguéis e encargos devidos, observados os requisitos legais.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">O inquilino pode evitar o despejo pagando a dívida?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><p>Em determinadas hipóteses, a legislação permite ao locatário evitar a rescisão da locação por meio do pagamento integral dos valores legalmente exigíveis, observados os requisitos e limitações aplicáveis.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quais documentos são importantes para avaliar meu caso?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><p>Contrato de locação, demonstrativo dos valores em atraso, comprovantes, mensagens de cobrança e demais documentos relacionados à relação locatícia.</p></div>
+      </div>
+    </div>
+
+    <div class="faq-foot reveal">
+      <p>Não encontrou sua dúvida? Uma avaliação individualizada pode esclarecer os caminhos disponíveis.</p>
+      <a class="btn wa-link" data-cta="faq" href="#">Esclarecer minha dúvida</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section class="about" id="sobre">
+  <div class="container">
+    <div class="logo-box reveal">
+      <!-- LOGO: substitua o bloco .logo-mark abaixo por <img src="logo.png" alt="Maria Silvestre Advocacia"> quando o arquivo original estiver disponível -->
+      <div class="logo-mark">
+        <div class="ms">MS</div>
+        <span class="name">Maria Silvestre</span>
+        <span class="sub">Advocacia</span>
+      </div>
+    </div>
+    <div class="reveal d1">
+      <span class="eyebrow">Sobre o escritório</span>
+      <h2>Maria Silvestre Advocacia</h2>
+      <p class="sub-h">Orientação jurídica para questões imobiliárias e conflitos locatícios.</p>
+      <p>Atendimento jurídico individualizado, pautado na análise cuidadosa de cada situação e na transparência das orientações. Nos conflitos entre proprietários e inquilinos, a atuação busca identificar alternativas adequadas à solução da controvérsia, observando a legislação aplicável.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="final" id="contato">
+  <div class="container">
+    <span class="eyebrow reveal">Fale com o escritório</span>
+    <h2 class="reveal d1">Seu imóvel está ocupado e <em>os aluguéis continuam atrasados?</em></h2>
+    <p class="reveal d2">Entenda quais medidas jurídicas podem ser adotadas diante da inadimplência e da permanência do inquilino no imóvel.</p>
+    <div class="reveal d3">
+      <a class="btn wa-link" data-cta="final" href="#">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2m0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.24-8.23 8.24m4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28"/></svg>
+        Iniciar atendimento pelo WhatsApp <span class="arrow">→</span>
+      </a>
+      <p class="note">Atendimento jurídico mediante análise individualizada da situação.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer class="footer">
+  <div class="container">
+    <div>
+      <div class="brand">
+        <strong>MARIA SILVESTRE ADVOCACIA</strong>
+        <span>Direito Imobiliário | Locação | Ações de Despejo</span>
+      </div>
+          </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li>WhatsApp: <a class="wa-link" data-cta="footer" href="#" id="footer-phone">(11) 99440-4242</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Informações profissionais</h4>
+      <ul>
+        <li>Maria Silvestre — OAB 535.328</li>
+        <li><a href="#" rel="nofollow">Política de Privacidade</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> Maria Silvestre Advocacia. Todos os direitos reservados.</span>
+    <span>Conteúdo informativo, em conformidade com o Provimento 205/2021 da OAB. Não constitui promessa de resultado.</span>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante (desktop) -->
+<a class="wa-float wa-link" data-cta="float" href="#" aria-label="Conversar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2m0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.24-8.23 8.24m4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28"/></svg>
+</a>
+
+<!-- Barra fixa inferior (mobile) -->
+<div class="wa-bar">
+  <a class="btn wa-link" data-cta="mobile_bar" href="#">Iniciar atendimento <span class="arrow">→</span></a>
+</div>
+
+<script>
+(function(){
+  var cfg = window.LP_CONFIG;
+
+  /* ---- Links de WhatsApp ---- */
+  var num = (cfg.WHATSAPP_NUMBER || "").replace(/\D/g,"");
+  var waUrl = "https://wa.me/" + num + "?text=" + encodeURIComponent(cfg.WHATSAPP_MESSAGE);
+  var links = document.querySelectorAll(".wa-link");
+  for (var i=0;i<links.length;i++){
+    links[i].setAttribute("href", waUrl);
+    links[i].setAttribute("target","_blank");
+    links[i].setAttribute("rel","noopener");
+    links[i].addEventListener("click", trackWhatsApp);
+  }
+  if(num){
+    var fp = document.getElementById("footer-phone");
+    if(fp){
+      var local = num.replace(/^55/,"");
+      var fmt = local.length===11 ? "("+local.slice(0,2)+") "+local.slice(2,7)+"-"+local.slice(7)
+              : local.length===10 ? "("+local.slice(0,2)+") "+local.slice(2,6)+"-"+local.slice(6) : "+"+num;
+      fp.textContent = fmt;
+    }
+  }
+
+  /* ---- Evento padronizado: whatsapp_click ---- */
+  function trackWhatsApp(e){
+    var loc = e.currentTarget.getAttribute("data-cta") || "unknown";
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "whatsapp_click",
+      cta_location: loc,
+      page_path: location.pathname
+    });
+    if (typeof gtag === "function" && cfg.GOOGLE_ADS_ID && cfg.GOOGLE_ADS_CONVERSION_LABEL){
+      gtag("event","conversion",{ send_to: cfg.GOOGLE_ADS_ID + "/" + cfg.GOOGLE_ADS_CONVERSION_LABEL });
+    }
+    if (typeof fbq === "function"){
+      fbq("track","Contact",{ content_name: "whatsapp_" + loc });
+    }
+  }
+
+  /* ---- GTM noscript ---- */
+  if(cfg.GTM_ID){
+    var ns = document.getElementById("gtm-noscript");
+    if(ns){
+      ns.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id='+cfg.GTM_ID+'" height="0" width="0" style="display:none;visibility:hidden"></iframe>';
+    }
+  }
+
+  /* ---- FAQ ---- */
+  var qs = document.querySelectorAll(".faq-q");
+  for (var j=0;j<qs.length;j++){
+    qs[j].addEventListener("click", function(){
+      var item = this.parentNode;
+      var open = item.classList.contains("open");
+      var all = document.querySelectorAll(".faq-item.open");
+      for (var k=0;k<all.length;k++){ all[k].classList.remove("open"); all[k].querySelector(".faq-q").setAttribute("aria-expanded","false"); }
+      if(!open){ item.classList.add("open"); this.setAttribute("aria-expanded","true"); }
+    });
+  }
+
+  /* ---- Animações ao rolar ---- */
+  var els = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
+    },{ threshold:.12, rootMargin:"0px 0px -40px 0px" });
+    for (var m=0;m<els.length;m++) io.observe(els[m]);
+  } else {
+    for (var n=0;n<els.length;n++) els[n].classList.add("in");
+  }
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
