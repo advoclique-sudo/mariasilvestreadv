@@ -21,7 +21,7 @@
 <script>
   window.LP_CONFIG = {
     // Número do WhatsApp com DDI + DDD, apenas dígitos. Ex.: "5553999999999"
-    WHATSAPP_NUMBER: "5511994404242",
+    WHATSAPP_NUMBER: "5511915029421",
     WHATSAPP_MESSAGE: "Olá! Tenho um imóvel com aluguel atrasado e gostaria de orientação jurídica.",
 
     // IDs de mensuração — deixe em branco até receber os identificadores reais
@@ -79,6 +79,9 @@
     --beige:#F6F0E7;
     --warm-white:#FFFCF7;
     --brown:#675244;
+    --gray:#8A8580;
+    --gray-light:#D9D5D0;
+    --gray-dark:#5C5955;
     --line:rgba(201,156,82,.35);
     --shadow:0 18px 50px -24px rgba(48,32,22,.35);
     --radius:14px;
@@ -110,14 +113,14 @@
     display:inline-flex;align-items:center;gap:12px;
     font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--gold-dark);
   }
-  .eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--gray-light)}
   .section-head{max-width:720px;margin-bottom:44px}
   .section-head h2{font-size:clamp(1.85rem,3.4vw,2.6rem);margin:16px 0 18px}
   .section-head p{font-size:1.08rem;color:var(--brown)}
   .center{text-align:center;margin-inline:auto}
   .center .eyebrow{justify-content:center}
-  .center .eyebrow::after{content:"";width:28px;height:1px;background:var(--gold)}
-  .note{font-size:.86rem;color:var(--brown);opacity:.85;line-height:1.6}
+  .center .eyebrow::after{content:"";width:28px;height:1px;background:var(--gray-light)}
+  .note{font-size:.86rem;color:var(--gray-dark);line-height:1.6}
 
   /* ---------- Botões ---------- */
   .btn{
@@ -169,7 +172,7 @@
   .hero h1 em{font-style:italic;color:var(--gold-dark)}
   .hero p.lead{font-size:1.12rem;max-width:560px;margin-bottom:36px;color:var(--brown)}
   .hero .note{margin-top:16px;display:flex;align-items:center;gap:10px}
-  .hero .note::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+  .hero .note::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gray)}
 
   .hero-visual{position:relative}
   .hero-frame{
@@ -184,7 +187,7 @@
                linear-gradient(0deg,rgba(246,240,231,.5) 0%,rgba(246,240,231,0) 30%);
   }
   .hero-frame-line{
-    position:absolute;inset:18px;border:1px solid rgba(201,156,82,.55);border-radius:12px;pointer-events:none;z-index:2;
+    position:absolute;inset:18px;border:1px solid rgba(217,213,208,.7);border-radius:12px;pointer-events:none;z-index:2;
   }
   .hero-badge{
     position:absolute;left:-22px;bottom:40px;z-index:3;
@@ -213,7 +216,7 @@
   .problems{background:var(--warm-white)}
   .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
   .card{
-    background:var(--beige);border:1px solid rgba(201,156,82,.25);border-radius:var(--radius);
+    background:var(--beige);border:1px solid var(--gray-light);border-radius:var(--radius);
     padding:34px 28px;position:relative;
     transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
   }
@@ -225,7 +228,7 @@
   }
   .card .icon svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
   .card h3{font-size:1.2rem;margin-bottom:10px}
-  .card p{font-size:.95rem;color:var(--brown)}
+  .card p{font-size:.95rem;color:var(--gray-dark)}
   .cards-foot{text-align:center;margin-top:56px;max-width:640px;margin-inline:auto}
   .cards-foot p{margin-bottom:28px;font-size:1.02rem}
   @media(max-width:1000px){.cards{grid-template-columns:repeat(2,1fr)}}
@@ -252,7 +255,7 @@
     border:1px solid rgba(201,156,82,.4);border-radius:var(--radius);padding:26px 28px;
     display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;
   }
-  .point .num{font-family:var(--font-serif);font-size:1.4rem;color:var(--gold-dark);line-height:1;padding-top:4px}
+  .point .num{font-family:var(--font-serif);font-size:1.4rem;color:var(--gray);line-height:1;padding-top:4px}
   .point h3{font-size:1.15rem;margin-bottom:6px}
   .point p{font-size:.95rem}
   @media(max-width:900px){.despejo .container{grid-template-columns:1fr;gap:44px}}
@@ -274,7 +277,7 @@
     position:relative;z-index:1;box-shadow:0 0 0 8px var(--beige);
   }
   .step h3{font-size:1.15rem;text-align:center;margin-bottom:10px}
-  .step p{font-size:.94rem;text-align:center}
+  .step p{font-size:.94rem;text-align:center;color:var(--gray-dark)}
   .steps-foot{text-align:center;margin-top:56px;max-width:600px;margin-inline:auto}
   .steps-foot p{margin-bottom:28px;font-size:1.02rem}
   @media(max-width:900px){
@@ -309,7 +312,7 @@
   .faq-item.open .faq-q .plus::before,.faq-item.open .faq-q .plus::after{background:var(--espresso)}
   .faq-item.open .faq-q .plus::after{transform:rotate(90deg)}
   .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease;padding:0 4px}
-  .faq-a p{padding-bottom:26px;font-size:1rem;max-width:720px}
+  .faq-a p{padding-bottom:26px;font-size:1rem;max-width:720px;color:var(--gray-dark)}
   .faq-item.open .faq-a{max-height:400px}
   .faq-foot{text-align:center;margin-top:56px}
   .faq-foot p{margin-bottom:26px;font-size:1.02rem}
@@ -317,7 +320,9 @@
 
   /* ---------- Sobre ---------- */
   .about{background:var(--beige)}
-  .about .container{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+  .about .container{max-width:760px;text-align:center}
+  .about .eyebrow{justify-content:center}
+  .about .eyebrow::after{content:"";width:28px;height:1px;background:var(--gray-light)}
   .logo-box{
     aspect-ratio:1;border:1px solid var(--line);border-radius:var(--radius);
     display:flex;align-items:center;justify-content:center;background:var(--warm-white);
@@ -328,11 +333,11 @@
   .logo-mark{text-align:center;font-family:var(--font-serif);color:var(--espresso)}
   .logo-mark .ms{font-size:4.4rem;line-height:1;letter-spacing:.04em;color:var(--gold-dark);font-weight:400}
   .logo-mark .name{display:block;font-size:1.05rem;letter-spacing:.2em;text-transform:uppercase;margin-top:18px;font-weight:500}
-  .logo-mark .sub{display:block;font-family:var(--font-sans);font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--brown);margin-top:8px}
+  .logo-mark .sub{display:block;font-family:var(--font-sans);font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gray);margin-top:8px}
   .about h2{font-size:clamp(1.9rem,3.2vw,2.5rem);margin:16px 0 10px}
   .about .sub-h{font-family:var(--font-serif);font-style:italic;font-size:1.2rem;color:var(--gold-dark);margin-bottom:24px}
   .about p{font-size:1.02rem;margin-bottom:16px}
-  @media(max-width:900px){.about .container{grid-template-columns:1fr;gap:40px}.logo-box{max-width:320px;margin-inline:auto}}
+  
 
   /* ---------- CTA Final ---------- */
   .final{background:var(--espresso);color:var(--beige);position:relative;overflow:hidden;text-align:center}
@@ -351,7 +356,7 @@
   .final p{font-size:1.1rem;color:var(--champagne);max-width:620px;margin:0 auto 38px;opacity:.9}
   .final .btn{box-shadow:0 18px 40px -16px rgba(201,156,82,.7)}
   .final .btn svg{width:20px;height:20px}
-  .final .note{margin-top:20px;color:var(--champagne);opacity:.7}
+  .final .note{margin-top:20px;color:#B8B2AA}
 
   /* ---------- Rodapé ---------- */
   .footer{background:#211610;color:var(--beige);padding:56px 0 110px;font-size:.88rem}
@@ -360,12 +365,12 @@
   .footer .brand span{color:var(--gold)}
   .footer h4{font-family:var(--font-sans);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:500}
   .footer ul{list-style:none}
-  .footer li{margin-bottom:10px;color:rgba(246,240,231,.8)}
+  .footer li{margin-bottom:10px;color:#C9C4BD}
   .footer a:hover{color:var(--gold)}
   .footer .placeholder{color:rgba(246,240,231,.45);font-style:italic}
   .footer-bottom{
     margin-top:44px;padding-top:24px;border-top:1px solid rgba(201,156,82,.25);
-    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.78rem;color:rgba(246,240,231,.55);
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.78rem;color:#8A8580;
   }
   @media(max-width:900px){.footer .container{grid-template-columns:1fr 1fr}}
   @media(max-width:600px){.footer .container{grid-template-columns:1fr}.footer{padding-bottom:120px}}
@@ -615,14 +620,6 @@
 <!-- ================= SOBRE ================= -->
 <section class="about" id="sobre">
   <div class="container">
-    <div class="logo-box reveal">
-      <!-- LOGO: substitua o bloco .logo-mark abaixo por <img src="logo.png" alt="Maria Silvestre Advocacia"> quando o arquivo original estiver disponível -->
-      <div class="logo-mark">
-        <div class="ms">MS</div>
-        <span class="name">Maria Silvestre</span>
-        <span class="sub">Advocacia</span>
-      </div>
-    </div>
     <div class="reveal d1">
       <span class="eyebrow">Sobre o escritório</span>
       <h2>Maria Silvestre Advocacia</h2>
@@ -662,7 +659,9 @@
     <div>
       <h4>Contato</h4>
       <ul>
-        <li>WhatsApp: <a class="wa-link" data-cta="footer" href="#" id="footer-phone">(11) 99440-4242</a></li>
+        <li>WhatsApp: <a class="wa-link" data-cta="footer" href="#" id="footer-phone">(11) 91502-9421</a></li>
+        <li>E-mail: <a href="mailto:mariaeloisags.adv@gmail.com">mariaeloisags.adv@gmail.com</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/mariaeloisa.adv" target="_blank" rel="noopener">@mariaeloisa.adv</a></li>
       </ul>
     </div>
     <div>
